@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- Header / Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
             <div class="container">
@@ -55,18 +56,23 @@
     </header>
 
     <main role="main">
+        <!-- Mountains Jumbotron banner -->
         <div class="jumbotron jumbotron-detail-mountains-top container-fluid"></div>
-
-        <div class="section">
+        <!-- Education Section -->
+        <div id="secExperience" class="section">
             <div class="container">
-                <div class="row" id="secExperience">
+                <div class="row">
+                    <!-- Education title and summary -->
+                    <!-- TODO: insert summary -->
                     <div class="col-lg-4">
                         <h1 class="section-header display-4">Experience</h1>
                     </div>
                     <div class="col-lg-8">
+                        <!-- Timeline -->
                         <div class="card">
                             <div class="card-body">
                                 <ul class="timeline">
+                                    <!-- Key experience -->
                                     <li class="event">
                                         <div class="exp-content">
                                             <h3>Aries Systems Corporation</h3>
@@ -131,6 +137,7 @@
                                             </p>
                                         </div>
                                     </li>
+                                    <!-- TODO: update with better information -->
                                     <li class="event">
                                         <div class="exp-content">
                                             <h3>US Department of State</h3>
@@ -146,14 +153,35 @@
                                         </div>
                                     </li>
                                 </ul>
-                                <div class="chevron-container">
+                                <!-- Extra experience section -->
+                                <div id="moreExperience" class="expanding-section-chevron">
                                     <svg id="extraExpChevron" xmlns="http://www.w3.org/2000/svg" width="30" height="20"
-                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        fill="currentColor" class="bi bi-chevron-down centered-content" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
                                             d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                                     </svg>
-                                    <div id="moreExperience" class="extra-content-section-hidden">
-                                        <div class="extra-exp">
+                                    <!-- Hidden until hover -->
+                                    <div class="content-hidden">
+                                        <!-- TODO: insert proper experience -->
+                                        <div class="extra-exp-item">
+                                            <h3>Aries Systems Corporation</h3>
+                                            <h5>June 2020 - Present</h5>
+                                            <em>Software Engineer</em>
+                                            <br>
+                                            <br>
+                                            <p>
+                                                Full stack, .NET developer on Editorial Manager, a peer-review and
+                                                publishing
+                                                management system. Worked as engineering
+                                                team member tasked with design and implementation of customer
+                                                specifications
+                                                and bug fixes. Worked as a member of
+                                                both Waterfall and Agile teams. Took part in a company transformation
+                                                from
+                                                Waterfall to Agile.
+                                            </p>
+                                        </div>
+                                        <div class="extra-exp-item">
                                             <h3>Aries Systems Corporation</h3>
                                             <h5>June 2020 - Present</h5>
                                             <em>Software Engineer</em>
@@ -179,17 +207,17 @@
                 </div>
             </div>
         </div>
-
-        <div class="section">
+        <!-- Education Section -->
+        <div id="secEducation" class="section">
             <div class="container">
-                <div class="row" id="secEducation">
+                <div class="row">
                     <div class="col-lg-8">
                         <div class="education">
                             <h3>Elizabethtown College</h3>
                             <h5>B.S. Computer Science</h5>
-                            <div id="collegeDetails" class="chevron-container-education">
-                                <button class="education-details-button"></button>
-                                <div class="education-details-hidden">
+                            <div id="collegeDetails" class="expanding-section-chevron">
+                                <button class="education-details-button centered-content"></button>
+                                <div class="content-hidden">
                                     <div class="education-details-details">
                                         <p>
                                             Full stack, .NET developer on Editorial Manager, a peer-review and
@@ -209,9 +237,9 @@
                         <div class="education">
                             <h3>International School of Estonia</h3>
                             <h5>International Baccalaureate Diploma</h5>
-                            <div id="highSchoolDetails" class="chevron-container-education">
-                                <button class="education-details-button"></button>
-                                <div class="education-details-hidden">
+                            <div id="highSchoolDetails" class="expanding-section-chevron">
+                                <button class="education-details-button centered-content"></button>
+                                <div class="content-hidden">
                                     <div class="education-details-details">
                                         <p>
                                             Full stack, .NET developer on Editorial Manager, a peer-review and
@@ -235,10 +263,10 @@
                 </div>
             </div>
         </div>
-
-        <div class="section">
+        <!-- Awards Section -->
+        <div id="secAwards" class="section">
             <div class="container">
-                <div class="row" id="secAwards">
+                <div class="row">
                     <div class="col-lg-4">
                         <h1 class="section-header display-4">Awards</h1>
                     </div>
@@ -267,10 +295,10 @@
                 </div>
             </div>
         </div>
-
-        <div class="section">
+        <!-- Projects Section -->
+        <div id="secProjects" class="section">
             <div class="container">
-                <div class="row" id="secProjects">
+                <div class="row">
                     <div class="col-lg-8">
                         <ul>
                             <li>
@@ -306,15 +334,24 @@
     <script src="js/bootstrap.js"></script>
 
     <script type="text/javascript">
-        let expSection = $("#moreExperience");
-        $(".chevron-container").hover(
+        $(".exp-content").hover(
             function () {
-                expSection.removeClass("extra-content-section-hidden");
-                expSection.addClass("extra-content-section-shown");
+                $(".exp-content").not($(this)).css("filter", "blur(1px)");
             },
             function () {
-                expSection.removeClass("extra-content-section-shown");
-                expSection.addClass("extra-content-section-hidden");
+                $(".exp-content").css("filter", "none");
+            }
+        );
+
+        $("#moreExperience").hover(
+            function () {
+                let neededHeight = ($(".extra-exp-item").length * $(".extra-exp-item").css("height").replace("px", "")) + "px";
+                $(".card").css("margin-bottom", neededHeight);
+                $(".section:not(#secExperience), .timeline").css("filter", "blur(4px)");
+            },
+            function () {
+                $(".card").css("margin-bottom", "0");
+                $(".section:not(#secExperience), .timeline").css("filter", "none");
             }
         );
     </script>
