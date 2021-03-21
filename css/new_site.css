@@ -1,0 +1,108 @@
+ /* Section styles */
+ .section {
+     padding: 10px;
+ }
+
+ .section:nth-child(even) {
+     background-color: #f7f7f7;
+ }
+
+ .section:nth-child(odd) {
+     background-color: white;
+ }
+
+ .section:nth-child(odd):first-of-type {
+     margin-bottom: 30px;
+ }
+
+ #secBiography {
+     text-align: center;
+ }
+
+ #secBiography a {
+     text-decoration: none;
+ }
+
+ #secSkills ul {
+     font-size: 22px;
+ }
+
+ #secAwards ul {
+     font-size: 22px;
+ }
+
+ .card {
+     transition: 0.5s;
+     margin    : 15px;
+ }
+
+ .card:hover {
+     transform: scale(1.5);
+     z-index  : 100;
+ }
+
+ .centered-image {
+     border-radius: 50%;
+     height       : 20%;
+     margin       : auto;
+     display      : block;
+     margin-top   : 10px;
+     max-height   : 475px;
+     max-width    : 450px;
+ }
+
+ .exp-content {
+     background   : white;
+     border-radius: 5px;
+     box-shadow   : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     font-size    : 1.0em;
+     padding      : 7px;
+     text-align   : left;
+     margin       : 7px;
+     transition   : transform .25s;
+ }
+
+ .exp-content:hover {
+     transform: scale(1.12);
+ }
+
+ #secBiography a:hover svg {
+     transform: scale(1.25);
+ }
+
+ .project-content {
+     background   : white;
+     border-radius: 5px;
+     box-shadow   : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     font-size    : 1.0em;
+     padding      : 7px;
+     text-align   : left;
+     margin       : 7px;
+     margin-bottom: 20px;
+ }
+
+ .project-details-button {
+     background: url("../images/chevron-down.svg") no-repeat center center;
+     border    : none;
+     width     : 50px;
+     height    : 10px;
+     margin    : 5px;
+ }
+
+ .project-details-button-up {
+     background: url("../images/chevron-up.svg") no-repeat center center;
+     border    : none;
+     width     : 50px;
+     height    : 10px;
+     margin    : 5px;
+ }
+
+ .content-hidden {
+     display: none;
+ }
+
+ @media (max-width: 992px) {
+     #secExperience .container {
+         margin-bottom: 100px;
+     }
+ }

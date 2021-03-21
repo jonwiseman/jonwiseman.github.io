@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/new_site.css">
 </head>
 
 <body>
@@ -31,22 +31,21 @@
                             <a class="nav-link" href="#secExperience">Experience</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#secEducation">Education</a>
+                            <a class="nav-link" href="#secSkills">Skills</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#secAwards">Awards</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 Projects
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="draftSense.html">DraftSense</a>
-                                <a class="dropdown-item" href="subCluster.html">SubCluster</a>
-                                <a class="dropdown-item" href="lfj.html">Looking for Jays</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#secProjects">Projects Overview</a>
+                                <a class="dropdown-item" href="#draftSense">DraftSense</a>
+                                <a class="dropdown-item" href="#lfj">Looking for Jays</a>
+                                <a class="dropdown-item" href="#subCluster">SubCluster</a>
+                                <a class="dropdown-item" href="#malNet">MalNet</a>
                             </div>
                         </li>
                     </ul>
@@ -56,50 +55,211 @@
     </header>
 
     <main role="main">
-        <!-- Mountains Jumbotron banner -->
-        <div class="jumbotron jumbotron-detail-mountains-top container-fluid"></div>
-        <!-- Education Section -->
+        <div id="secBiography" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="container">
+                            <div class="row">
+                                <img src="images/photo.jpg" class="img-fluid centered-image" alt="Tiddy Rock">
+                            </div>
+                        </div>
+                        <h3>
+                            Jonathan Wiseman
+                        </h3>
+                        <h4 class="text-muted">
+                            Software Engineer
+                        </h4>
+                        <a href="https://www.ariessys.com/">
+                            <span>Aries Systems Corporation</span>
+                        </a>
+                        <br>
+                        <span>
+                            <a href="mailto:jonathan.wiseman107@gmail.com" title="Send me an Email">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black"
+                                    class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.github.com/jonwiseman" title="Github">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                            </a>
+                            <a title="View me on LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                </svg>
+                            </a>
+                            <a href="files/Wiseman_CV.pdf" title="View my CV">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black"
+                                    class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z" />
+                                    <path
+                                        d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z" />
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="section-header display-2">Biography</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum
+                            tincidunt lacus nec finibus. Donec sit amet faucibus odio, id volutpat augue. Mauris
+                            porta et leo id blandit. Sed finibus augue vestibulum, ultrices ante quis, luctus
+                            dolor. Cras vitae lobortis nisi. Mauris vitae libero libero. Proin malesuada dui
+                            mollis, ullamcorper erat id, vehicula justo. Aliquam erat volutpat. Donec auctor
+                            risus ut magna vestibulum, id euismod massa gravida. Nunc a ex venenatis urna
+                            viverra luctus vel et urna. Duis at massa augue. Nunc convallis mauris a semper
+                            feugiat. Vestibulum a sollicitudin ex. Donec tristique vehicula pulvinar. Curabitur
+                            viverra lorem ut varius viverra.
+                        </p>
+                        <div class="container">
+                            <div class="row">
+                                <br>
+                                <div class="col-md-6">
+                                    <h4 class="display-6">
+                                        Interests
+                                    </h4>
+                                    <ul style="text-align: left;">
+                                        <li>
+                                            Web development
+                                        </li>
+                                        <li>
+                                            Natural Language Processing
+                                        </li>
+                                        <li>
+                                            Sports Analytics
+                                        </li>
+                                        <li>
+                                            Data Science
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="display-6">
+                                        Education
+                                    </h4>
+                                    <div class="row" style="text-align: left">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16"
+                                                fill="currentColor" class="bi bi-symmetry-horizontal"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.5 7a.5.5 0 0 0 .24-.939l-11-6A.5.5 0 0 0 2 .5v6a.5.5 0 0 0 .5.5h11zm.485 2.376a.5.5 0 0 1-.246.563l-11 6A.5.5 0 0 1 2 15.5v-6a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .485.376zM11.539 10H3v4.658L11.54 10z" />
+                                            </svg>
+                                            <span>
+                                                <strong> Elizabethtown College </strong>
+                                                <small> B.S. Computer Science - Summa Cum Laude - 4.0 GPA - June 2020
+                                                </small>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <br>
+                                    <div class="row" style="text-align: left">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16"
+                                                fill="currentColor" class="bi bi-symmetry-horizontal"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.5 7a.5.5 0 0 0 .24-.939l-11-6A.5.5 0 0 0 2 .5v6a.5.5 0 0 0 .5.5h11zm.485 2.376a.5.5 0 0 1-.246.563l-11 6A.5.5 0 0 1 2 15.5v-6a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .485.376zM11.539 10H3v4.658L11.54 10z" />
+                                            </svg>
+                                            <span>
+                                                <strong> International School of Estonia </strong>
+                                                <small> International Baccalaureate Diploma - June 2016 </small>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="secExperience" class="section">
             <div class="container">
                 <div class="row">
-                    <!-- Education title and summary -->
-                    <!-- TODO: insert summary -->
-                    <div class="col-lg-4">
-                        <h1 class="section-header display-4">Experience</h1>
+                    <div class="col-md-4">
+                        <h1 class="section-header display-2">Experience</h1>
                     </div>
-                    <div class="col-lg-8">
-                        <!-- Timeline -->
-                        <div class="card">
-                            <div class="card-body">
-                                <ul class="timeline">
-                                    <!-- Key experience -->
-                                    <li class="event">
+                    <div class="col-md-8" style="text-align: center;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="row d-flex" style="height: 33%;">
+                                        &nbsp;
+                                    </div>
+                                    <div class="row d-flex justify-content-center" style="height: 33%;">
+                                        <img src="images/circle-fill.svg" class="img-fluid" alt="Tiddy Rock"
+                                            style="width: 50%;">
+                                    </div>
+                                    <div class="row d-flex" style="height: 33%;">
+                                        <img src="images/vertical_line.svg" class="img-fluid" alt="Tiddy Rock"
+                                            style="height: 105%;">
+                                    </div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="row d-flex">
+                                        &nbsp;
+                                    </div>
+                                    <div class="row d-flex">
                                         <div class="exp-content">
-                                            <h3>Aries Systems Corporation</h3>
-                                            <h5>June 2020 - Present</h5>
-                                            <em>Software Engineer</em>
-                                            <br>
-                                            <br>
+                                            <h3 class="display-6">
+                                                Aries Systems Corporation
+                                            </h3>
+                                            <h4 class="text-muted lead">
+                                                Software Engineer, June 2020 - Present
+                                            </h4>
                                             <p>
                                                 Full stack, .NET developer on Editorial Manager, a peer-review and
-                                                publishing
-                                                management system. Worked as engineering
+                                                publishing management system. Worked as engineering
                                                 team member tasked with design and implementation of customer
-                                                specifications
-                                                and bug fixes. Worked as a member of
+                                                specifications and bug fixes. Worked as a member of
                                                 both Waterfall and Agile teams. Took part in a company transformation
-                                                from
-                                                Waterfall to Agile.
+                                                from Waterfall to Agile.
                                             </p>
                                         </div>
-                                    </li>
-                                    <li class="event">
+                                    </div>
+                                    <div class="row d-flex">
+                                        &nbsp;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="row d-flex" style="height: 33%;">
+                                        <img src="images/vertical_line.svg" class="img-fluid" alt="Tiddy Rock"
+                                            style="height: 100%;">
+                                    </div>
+                                    <div class="row d-flex justify-content-center" style="height: 33%;">
+                                        <img src="images/circle.svg" class="img-fluid" alt="Tiddy Rock"
+                                            style="width: 50%;">
+                                    </div>
+                                    <div class="row d-flex" style="height: 33%;">
+                                        <img src="images/vertical_line.svg" class="img-fluid" alt="Tiddy Rock"
+                                            style="height: 105%;">
+                                    </div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="row d-flex">
+                                        &nbsp;
+                                    </div>
+                                    <div class="row d-flex">
                                         <div class="exp-content">
-                                            <h3>ACANETS Lab, University of Massachusetts, Lowell</h3>
-                                            <h5>June 2019 - August 2019</h5>
-                                            <em>Engineering Research Assistant</em>
-                                            <br>
-                                            <br>
+                                            <h3 class="display-6">
+                                                ACANETS Lab, University of Massachusetts, Lowell
+                                            </h3>
+                                            <h4 class="text-muted lead">
+                                                Engineering Research Assistant, June 2019 - August 2019
+                                            </h4>
                                             <p>
                                                 Research assistant working on three academic projects:
                                             </p>
@@ -122,83 +282,47 @@
                                                 </li>
                                             </ol>
                                         </div>
-                                    </li>
-                                    <li class="event">
+                                    </div>
+                                    <div class="row d-flex">
+                                        &nbsp;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="row d-flex" style="height: 33%;">
+                                        <img src="images/vertical_line.svg" class="img-fluid" alt="Tiddy Rock"
+                                            style="height: 100%;">
+                                    </div>
+                                    <div class="row d-flex justify-content-center" style="height: 33%;">
+                                        <img src="images/circle.svg" class="img-fluid" alt="Tiddy Rock"
+                                            style="width: 50%;">
+                                    </div>
+                                    <div class="row d-flex" style="height: 33%;">
+                                        &nbsp;
+                                    </div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="row d-flex">
+                                        &nbsp;
+                                    </div>
+                                    <div class="row d-flex" style="height: 60%;">
                                         <div class="exp-content">
-                                            <h3>Elizabethtown College</h3>
-                                            <h5>August 2018 - March 2020</h5>
-                                            <em>Computer Science Laboratory Assistant and Tutor</em>
-                                            <br>
-                                            <br>
+                                            <h3 class="display-6">
+                                                Elizabethtown College
+                                            </h3>
+                                            <h4 class="text-muted lead">
+                                                Computer Science Lab Assistant & Tutor, August 2018 - March 2020
+                                            </h4>
                                             <p>
                                                 Assisted students with projects, assignments, and general questions on
                                                 behalf of Elizabethtown’s Computer Science
                                                 Department.
                                             </p>
                                         </div>
-                                    </li>
-                                    <!-- TODO: update with better information -->
-                                    <li class="event">
-                                        <div class="exp-content">
-                                            <h3>US Department of State</h3>
-                                            <h5>December 2018 - January 2019</h5>
-                                            <em>Administrative Assistant</em>
-                                            <br>
-                                            <br>
-                                            <p>
-                                                Provided general services for embassy staff and family, including
-                                                mailroom,
-                                                IT, landscaping, and event planning
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <!-- Extra experience section -->
-                                <div id="moreExperience" class="expanding-section-chevron">
-                                    <svg id="extraExpChevron" xmlns="http://www.w3.org/2000/svg" width="30" height="20"
-                                        fill="currentColor" class="bi bi-chevron-down centered-content" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                                    </svg>
-                                    <!-- Hidden until hover -->
-                                    <div class="content-hidden">
-                                        <!-- TODO: insert proper experience -->
-                                        <div class="extra-exp-item">
-                                            <h3>Aries Systems Corporation</h3>
-                                            <h5>June 2020 - Present</h5>
-                                            <em>Software Engineer</em>
-                                            <br>
-                                            <br>
-                                            <p>
-                                                Full stack, .NET developer on Editorial Manager, a peer-review and
-                                                publishing
-                                                management system. Worked as engineering
-                                                team member tasked with design and implementation of customer
-                                                specifications
-                                                and bug fixes. Worked as a member of
-                                                both Waterfall and Agile teams. Took part in a company transformation
-                                                from
-                                                Waterfall to Agile.
-                                            </p>
-                                        </div>
-                                        <div class="extra-exp-item">
-                                            <h3>Aries Systems Corporation</h3>
-                                            <h5>June 2020 - Present</h5>
-                                            <em>Software Engineer</em>
-                                            <br>
-                                            <br>
-                                            <p>
-                                                Full stack, .NET developer on Editorial Manager, a peer-review and
-                                                publishing
-                                                management system. Worked as engineering
-                                                team member tasked with design and implementation of customer
-                                                specifications
-                                                and bug fixes. Worked as a member of
-                                                both Waterfall and Agile teams. Took part in a company transformation
-                                                from
-                                                Waterfall to Agile.
-                                            </p>
-                                        </div>
+                                    </div>
+                                    <div class="row d-flex">
+                                        &nbsp;
                                     </div>
                                 </div>
                             </div>
@@ -207,124 +331,346 @@
                 </div>
             </div>
         </div>
-        <!-- Education Section -->
-        <div id="secEducation" class="section">
+        <div id="secSkills" class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
-                        <div class="education">
-                            <h3>Elizabethtown College</h3>
-                            <h5>B.S. Computer Science</h5>
-                            <div id="collegeDetails" class="expanding-section-chevron">
-                                <button class="education-details-button centered-content"></button>
-                                <div class="content-hidden">
-                                    <div class="education-details-details">
-                                        <p>
-                                            Full stack, .NET developer on Editorial Manager, a peer-review and
-                                            publishing
-                                            management system. Worked as engineering
-                                            team member tasked with design and implementation of customer
-                                            specifications
-                                            and bug fixes. Worked as a member of
-                                            both Waterfall and Agile teams. Took part in a company transformation
-                                            from
-                                            Waterfall to Agile.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="education">
-                            <h3>International School of Estonia</h3>
-                            <h5>International Baccalaureate Diploma</h5>
-                            <div id="highSchoolDetails" class="expanding-section-chevron">
-                                <button class="education-details-button centered-content"></button>
-                                <div class="content-hidden">
-                                    <div class="education-details-details">
-                                        <p>
-                                            Full stack, .NET developer on Editorial Manager, a peer-review and
-                                            publishing
-                                            management system. Worked as engineering
-                                            team member tasked with design and implementation of customer
-                                            specifications
-                                            and bug fixes. Worked as a member of
-                                            both Waterfall and Agile teams. Took part in a company transformation
-                                            from
-                                            Waterfall to Agile.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-4">
+                        <h1 class="section-header display-2">Skills</h1>
                     </div>
-                    <div class="col-lg-4">
-                        <h1 class="section-header display-4" style="text-align: right;">Education</h1>
+                    <div class="col-md-8">
+                        <br>
+                        <h3 class="display-6">
+                            Languages
+                        </h3>
+                        <ul>
+                            <li>
+                                C# (including .NET Framework)
+                            </li>
+                            <li>
+                                JavaScript
+                            </li>
+                            <li>
+                                HTML & CSS
+                            </li>
+                            <li>
+                                SQL
+                            </li>
+                            <li>
+                                Python
+                            </li>
+                            <li>
+                                Java
+                            </li>
+                            <li>
+                                C
+                            </li>
+                        </ul>
+                        <hr>
+                        <h3 class="display-6">
+                            Tools & IDEs
+                        </h3>
+                        <ul>
+                            <li>
+                                Visual Studio
+                            </li>
+                            <li>
+                                SQL Server Management Studio
+                            </li>
+                            <li>
+                                Git
+                            </li>
+                            <li>
+                                Jupyter
+                            </li>
+                        </ul>
                     </div>
                 </div>
+
             </div>
         </div>
-        <!-- Awards Section -->
+
         <div id="secAwards" class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
-                        <h1 class="section-header display-4">Awards</h1>
+                    <div class="col-md-4">
+                        <h1 class="section-header display-2">Awards</h1>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-md-8">
                         <ul>
                             <li>
-                                ASDF
+                                International Baccalaureate Diploma, <small class="text-muted"> May 2015 </small>
                             </li>
-                        </ul>
-                        <ul>
                             <li>
-                                ASDF
+                                Stamps Family Charitable Foundation Scholarship Recipient, <small class="text-muted">
+                                    August 2016 - June 2020 </small>
                             </li>
-                        </ul>
-                        <ul>
                             <li>
-                                ASDF
+                                Elizabethtown College Honors Program, <small class="text-muted"> August 2016 - June 2020
+                                </small>
                             </li>
-                        </ul>
-                        <ul>
                             <li>
-                                ASDF
+                                Anna Carper Research Award Finalist, <small class="text-muted"> April 2017 </small>
+                            </li>
+                            <li>
+                                Pi Mu Epsilon National Honorary Mathematics Society, <small class="text-muted"> April
+                                    2019 </small>
+                            </li>
+                            <li>
+                                Elizabethtown College Honors Program Best Senior Thesis - Grand Prize Winner, <small
+                                    class="text-muted"> May 2020 </small>
+                            </li>
+                            <li>
+                                Graduated Summa Cum Laude, Elizabethtown College, <small class="text-muted"> June 2020
+                                </small>
                             </li>
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
-        <!-- Projects Section -->
-        <div id="secProjects" class="section">
+
+        <div id="#secProjects" class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
-                        <ul>
-                            <li>
-                                ASDF
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                ASDF
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                ASDF
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                ASDF
-                            </li>
-                        </ul>
+                    <div class="col-md-4">
+                        <h1 class="section-header display-2">Projects</h1>
                     </div>
-                    <div class="col-lg-4">
-                        <h1 class="section-header display-4" style="text-align: right;">Projects</h1>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-11">
+                                <div id="draftSense" class="project-content">
+                                    <h3 class="display-6">
+                                        DraftSense
+                                    </h3>
+                                    <h4 class="text-muted lead">
+                                        August 2019 - May 2020
+                                    </h4>
+                                    A sentiment analyzer detecting positive/negative polarity towards NFL draftees with
+                                    85%
+                                    accuracy.
+                                    <div class="button-house">
+                                        <div class="row d-flex justify-content-center">
+                                            <button class="project-details-button"></button>
+                                        </div>
+                                    </div>
+                                    <div class="project-details content-hidden">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                Trained on a
+                                                hand-collected and labelled dataset based on over 14,000 Reddit
+                                                comments; this
+                                                dataset was also made publicly available
+                                                for other researchers. DraftSense won Elizabethtown College’s Grand
+                                                Prize for
+                                                Best
+                                                Honors Senior Thesis. The images below contain some interesting insights
+                                                about
+                                                the way NFL draftees
+                                                are discussed on Reddit.
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="card">
+                                                    <img src="images/negative_comments.png" class="card-img-top">
+                                                    <div class="card-body">
+                                                        <p class="card-text text-muted">The most common negative words
+                                                            in
+                                                            comments</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="card">
+                                                    <img src="images/comment_length.png" class="card-img-top">
+                                                    <div class="card-body">
+                                                        <p class="card-text text-muted">How comment length corresponds
+                                                            to
+                                                            positivity/negativity</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="card">
+                                                    <img src="images/one_words.png" class="card-img-top">
+                                                    <div class="card-body">
+                                                        <p class="card-text text-muted">The most common single-word
+                                                            comments.
+                                                            Note how Internet slang - mostly negative - dominates</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="button-house row d-flex justify-content-center">
+                                            <button class="project-details-button-up"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <div class="row d-flex" style="height: 33%;">
+                                    &nbsp;
+                                </div>
+                                <a href="https:github.com/jonwiseman/DraftSense">
+                                    <div class="row d-flex justify-content-center" style="height: 33%;">
+                                        <img src="images/github.svg" class="img-fluid">
+                                    </div>
+                                </a>
+                                <div class="row d-flex" style="height: 33%;">
+                                    &nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-11">
+                                <div id="lfj" class="project-content">
+                                    <h3 class="display-6">
+                                        Looking for Jays
+                                    </h3>
+                                    <h4 class="text-muted lead">
+                                        January 2020 - May 2020
+                                    </h4>
+                                    A Python-based Discord bot for organizing Elizabethtown College’s E-Sports Team.
+                                    <div class="button-house">
+                                        <div class="row d-flex justify-content-center">
+                                            <button class="project-details-button"></button>
+                                        </div>
+                                    </div>
+                                    <div class="project-details content-hidden">
+                                        <div class="row">
+                                            <p>
+                                                The bot can be used for event signup,
+                                                scheduling, club role management, team balancing, and statistics
+                                                collection.
+                                            </p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card">
+                                                    <img src="images/LFJ Overview.png" class="card-img-top">
+                                                    <div class="card-body">
+                                                        <p class="card-text text-muted">LFJ Design</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="button-house row d-flex justify-content-center">
+                                            <button class="project-details-button-up"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <div class="row d-flex" style="height: 33%;">
+                                    &nbsp;
+                                </div>
+                                <a href="https://github.com/jonwiseman/LFJ">
+                                    <div class="row d-flex justify-content-center" style="height: 33%;">
+                                        <img src="images/github.svg" class="img-fluid">
+                                    </div>
+                                </a>
+                                <div class="row d-flex" style="height: 33%;">
+                                    &nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-11">
+                                <div id="subCluster" class="project-content">
+                                    <h3 class="display-6">
+                                        SubCluster
+                                    </h3>
+                                    <h4 class="text-muted lead">
+                                        August 2019 - December 2019
+                                    </h4>
+                                    A subreddit and post recommender system for Redditors based on clustering models.
+                                    <div class="button-house">
+                                        <div class="row d-flex justify-content-center">
+                                            <button class="project-details-button"></button>
+                                        </div>
+                                    </div>
+                                    <div class="project-details content-hidden">
+                                        <div class="row">
+                                            <p>
+                                                Trained on a hand-collected and
+                                                labelled dataset spanning 37 subreddits, 111,000 comments, and 8
+                                                categories.
+                                                Final clustering models showed high
+                                                homogeneity and completeness, and could be used to recommend subreddits
+                                                or
+                                                posts given either as input.
+
+                                            </p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card">
+                                                    <img src="images/art.png" class="card-img-top">
+                                                    <div class="card-body">
+                                                        <p class="card-text text-muted">Reddit's art communities showing
+                                                            the site's lovely side</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="button-house row d-flex justify-content-center">
+                                            <button class="project-details-button-up"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <div class="row d-flex" style="height: 33%;">
+                                    &nbsp;
+                                </div>
+                                <a href="https://github.com/jonwiseman/DS300">
+                                    <div class="row d-flex justify-content-center" style="height: 33%;">
+                                        <img src="images/github.svg" class="img-fluid">
+                                    </div>
+                                </a>
+                                <div class="row d-flex" style="height: 33%;">
+                                    &nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-11">
+                                <div id="malNet" class="project-content">
+                                    <h3 class="display-6">
+                                        MalNet
+                                    </h3>
+                                    <h4 class="text-muted lead">
+                                        June 2019 − August 2019
+                                    </h4>
+                                    A Python-based research utility for retrieving, labeling, and capturing network
+                                    activity for suspected malware.
+                                    <div class="button-house">
+                                        <div class="row d-flex justify-content-center">
+                                            <button class="project-details-button"></button>
+                                        </div>
+                                    </div>
+                                    <div class="project-details content-hidden">
+                                        <p>
+                                            MalNet was
+                                            used to generate a malware traffic dataset for use in machine learning
+                                            applications.
+                                        </p>
+                                        <div class="button-house row d-flex justify-content-center">
+                                            <button class="project-details-button-up"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                &nbsp;
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </main>
@@ -332,28 +678,31 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
         integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
-
     <script type="text/javascript">
+        $("#secBiography").css("margin-top", `${$(".navbar").css("height")}`);
         $(".exp-content").hover(
             function () {
-                $(".exp-content").not($(this)).css("filter", "blur(1px)");
+                $(".exp-content").not($(this)).css("filter", "blur(3px)");
             },
             function () {
-                $(".exp-content").css("filter", "none");
+                $(".exp-content").css("filter", "");
             }
         );
 
-        $("#moreExperience").hover(
-            function () {
-                let neededHeight = ($(".extra-exp-item").length * $(".extra-exp-item").css("height").replace("px", "")) + "px";
-                $(".card").css("margin-bottom", neededHeight);
-                $(".section:not(#secExperience), .timeline").css("filter", "blur(4px)");
-            },
-            function () {
-                $(".card").css("margin-bottom", "0");
-                $(".section:not(#secExperience), .timeline").css("filter", "none");
-            }
-        );
+        $(".details-button-down").click(function () {
+            $(this).parent().parent().siblings(".project-details").removeClass("content-hidden");
+            $(this).parent().parent().addClass("content-hidden");
+        });
+
+        $(".project-details-button").click(function () {
+            $(this).parent().parent().siblings(".project-details").removeClass("content-hidden");
+            $(this).parent().parent().addClass("content-hidden");
+        });
+
+        $(".project-details-button-up").click(function () {
+            $(this).parent().parent().addClass("content-hidden");
+            $(this).parent().parent().siblings(".button-house").removeClass("content-hidden");
+        });
     </script>
 </body>
 
