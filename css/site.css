@@ -1,8 +1,4 @@
  /* Section styles */
- .section {
-     padding: 10px;
- }
-
  .section:nth-child(even) {
      background-color: #f7f7f7;
  }
@@ -47,8 +43,8 @@
      margin       : auto;
      display      : block;
      margin-top   : 10px;
-     max-height   : 475px;
-     max-width    : 450px;
+     max-height   : 350px;
+     max-width    : 300px;
  }
 
  .exp-content {
@@ -106,3 +102,10 @@
          margin-bottom: 100px;
      }
  }
+
+ footer a {
+     text-align     : center;
+     color          : white;
+     text-decoration: none;
+ }
+ 

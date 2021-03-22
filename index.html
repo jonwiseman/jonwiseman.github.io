@@ -6,7 +6,55 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/new_site.css">
+    <link rel="stylesheet" href="css/site.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- jQuery functions for site styles and interaction -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Add margin on first section to accomodate navbar
+            $("#secBiography").css("margin-top", `${$(".navbar").css("height")}`);
+
+            // Add padding on relevant section when navigating via navbar links
+            // Also clear this padding for all sections on default when a navbar link is clicked
+            $(".nav-link").click(function () {
+                $(".section").css("padding-top", "");
+                $(`${$(this).attr("href")}`).css("padding-top", `${$(".navbar").css("height")}`);
+            });
+
+            // Add blur to oher experience cards when one is hovered
+            $(".exp-content").hover(
+                function () {
+                    $(".exp-content").not($(this)).css("filter", "blur(3px)");
+                },
+                function () {
+                    $(".exp-content").css("filter", "");
+                }
+            );
+
+            // Show project details and hide self when clicking down chevron
+            $(".details-button-down").click(function () {
+                $(this).parent().parent().siblings(".project-details").removeClass("content-hidden");
+                $(this).parent().parent().addClass("content-hidden");
+            });
+
+            $(".project-details-button").click(function () {
+                $(this).parent().parent().siblings(".project-details").removeClass("content-hidden");
+                $(this).parent().parent().addClass("content-hidden");
+            });
+
+            //  Hide project details and up chevron button when clicked
+            $(".project-details-button-up").click(function () {
+                $(this).parent().parent().addClass("content-hidden");
+                $(this).parent().parent().siblings(".button-house").removeClass("content-hidden");
+            });
+
+            // Expand all project details by default on page load
+            $(".project-details-button").click();
+        });
+    </script>
 </head>
 
 <body>
@@ -17,7 +65,6 @@
                 <a class="navbar-brand" href="index.html">
                     <a class="navbar-brand" href="index.html">Jonathan Wiseman</a>
                 </a>
-
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -36,17 +83,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#secAwards">Awards</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Projects
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#draftSense">DraftSense</a>
-                                <a class="dropdown-item" href="#lfj">Looking for Jays</a>
-                                <a class="dropdown-item" href="#subCluster">SubCluster</a>
-                                <a class="dropdown-item" href="#malNet">MalNet</a>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#secProjects">Projects</a>
                         </li>
                     </ul>
                 </div>
@@ -55,9 +93,11 @@
     </header>
 
     <main role="main">
+        <!-- Biography Section -->
         <div id="secBiography" class="section">
             <div class="container">
                 <div class="row">
+                    <!-- Portrait, name, title, and links -->
                     <div class="col-md-4">
                         <div class="container">
                             <div class="row">
@@ -107,18 +147,18 @@
                             </a>
                         </span>
                     </div>
+                    <!-- Bio, interests, and Education -->
                     <div class="col-md-8">
-                        <h1 class="section-header display-2">Biography</h1>
+                        <h1 class="section-header display-2">
+                            Biography
+                        </h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum
-                            tincidunt lacus nec finibus. Donec sit amet faucibus odio, id volutpat augue. Mauris
-                            porta et leo id blandit. Sed finibus augue vestibulum, ultrices ante quis, luctus
-                            dolor. Cras vitae lobortis nisi. Mauris vitae libero libero. Proin malesuada dui
-                            mollis, ullamcorper erat id, vehicula justo. Aliquam erat volutpat. Donec auctor
-                            risus ut magna vestibulum, id euismod massa gravida. Nunc a ex venenatis urna
-                            viverra luctus vel et urna. Duis at massa augue. Nunc convallis mauris a semper
-                            feugiat. Vestibulum a sollicitudin ex. Donec tristique vehicula pulvinar. Curabitur
-                            viverra lorem ut varius viverra.
+                            Jonathan Wiseman is a software engineer and web developer currently working for Eslevier,
+                            Inc. as a member of <a href="https://www.ariessys.com/">Aries Systems
+                                Corporation</a>. He is a 2020 graduate of <a href="https://www.etown.edu/">Elizabethtown
+                                College</a> with a B.S. in Computer Science and a Mathematics minor.
+                            His interests include web development, natural language processing, data science, and
+                            sports analytics - particularly American football.
                         </p>
                         <div class="container">
                             <div class="row">
@@ -139,18 +179,6 @@
                                         </li>
                                         <li>
                                             Data Science
-                                        </li>
-                                    </ul>
-                                    <hr>
-                                    <ul style="text-align: left;">
-                                        <li>
-                                            Weightlifting & Fitness
-                                        </li>
-                                        <li>
-                                            Reading
-                                        </li>
-                                        <li>
-                                            Religious Studies (especially Anabaptist & Pietist Studies)
                                         </li>
                                     </ul>
                                 </div>
@@ -195,6 +223,7 @@
                 </div>
             </div>
         </div>
+        <!-- Job experience -->
         <div id="secExperience" class="section">
             <div class="container">
                 <div class="row">
@@ -203,7 +232,9 @@
                     </div>
                     <div class="col-md-8" style="text-align: center;">
                         <div class="container">
+                            <!-- Each row consists of... -->
                             <div class="row">
+                                <!-- ...a column for the circle/timeline -->
                                 <div class="col-2">
                                     <div class="row d-flex" style="height: 33%;">
                                         &nbsp;
@@ -217,6 +248,7 @@
                                             style="height: 105%;">
                                     </div>
                                 </div>
+                                <!-- ...a column for the actual job experience -->
                                 <div class="col-10">
                                     <div class="row d-flex">
                                         &nbsp;
@@ -342,6 +374,7 @@
                 </div>
             </div>
         </div>
+        <!-- Skills -->
         <div id="secSkills" class="section">
             <div class="container">
                 <div class="row">
@@ -399,7 +432,7 @@
 
             </div>
         </div>
-
+        <!-- Awards -->
         <div id="secAwards" class="section">
             <div class="container">
                 <div class="row">
@@ -440,8 +473,8 @@
 
             </div>
         </div>
-
-        <div id="#secProjects" class="section">
+        <!-- Projects -->
+        <div id="secProjects" class="section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -690,38 +723,16 @@
             </div>
         </div>
     </main>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
-        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.js"></script>
-    <script type="text/javascript">
-        $("#secBiography").css("margin-top", `${$(".navbar").css("height")}`);
-        $(".exp-content").hover(
-            function () {
-                $(".exp-content").not($(this)).css("filter", "blur(3px)");
-            },
-            function () {
-                $(".exp-content").css("filter", "");
-            }
-        );
-
-        $(".details-button-down").click(function () {
-            $(this).parent().parent().siblings(".project-details").removeClass("content-hidden");
-            $(this).parent().parent().addClass("content-hidden");
-        });
-
-        $(".project-details-button").click(function () {
-            $(this).parent().parent().siblings(".project-details").removeClass("content-hidden");
-            $(this).parent().parent().addClass("content-hidden");
-        });
-
-        $(".project-details-button-up").click(function () {
-            $(this).parent().parent().addClass("content-hidden");
-            $(this).parent().parent().siblings(".button-house").removeClass("content-hidden");
-        });
-
-        $(".project-details-button").click();
-    </script>
+    <!-- Footer -->
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <a href="#" class="text-muted">
+                    Return to Top
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
